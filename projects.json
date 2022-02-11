@@ -1,0 +1,24 @@
+{
+    "projects" : [
+        {
+            "name" : "tuberculosis.dev",
+            "desc" : "Meta, I know\nFairly obvious what this is, not sure I really need to explain myself",
+            "link" : "n/a",
+            "lastUpdated" : "24/01/2022",
+            "images" : [
+                "https://tuberculosis.dev/images/tuberculosis-dev.png"
+            ],
+            "repo" : "n/a"
+        },
+        {
+            "name" : "Simplicitas",
+            "desc" : "A dark mode texture pack with purple accents and custom main menu panorama\n(Can you tell I like purple?)",
+            "link" : "https://tuberculosis.dev/files/Simplicitas.zip",
+            "lastUpdated" : "23/01/2022",
+            "images" : [
+                "https://tuberculosis.dev/images/simplicitas.png"
+            ],
+            "repo" : "https://github.com/HughTB/simplicitas"
+        }
+    ]
+}
