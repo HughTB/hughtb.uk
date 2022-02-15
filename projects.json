@@ -25,7 +25,9 @@
             "desc" : "A URL shortening API written in C# with ASP.NET\nNo, the irony of shortening URLs by making them longer is not lost on me.\nThis is moreso for the purpose of practicing programming APIs anyway\nYou can use it by sending a POST with the URL you want to shorten to https://minima.tuberculosis.dev/{url}\nIf you really like, you can use https://minima.tuberculosis.dev/MUYzQkU1Rjc0 to view the repo",
             "link" : "https://minima.tuberculosis.dev/",
             "lastUpdated" : "15/02/2022",
-            "images" : [],
+            "images" : [
+                "https://tuberculosis.dev/images/placeholder.png"
+            ],
             "repo" : "https://github.com/HughTB/minima"
         }
     ]
