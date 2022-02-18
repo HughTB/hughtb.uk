@@ -7,7 +7,7 @@ async function getJson(url) {
 }
 
 async function populate() {
-    var json = await getJson("https://tuberculosis.dev/projects.json");
+    var json = await getJson("https://hughtb.uk/projects.json");
     var main = document.getElementById("projects-div");
 
     if (json.projects.length >= 1) {
