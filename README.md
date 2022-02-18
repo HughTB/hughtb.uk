@@ -1,4 +1,4 @@
-# tuberculosis.dev
-https://tuberculosis.dev
+# hughtb.uk
+https://hughtb.uk/
 
 I feel like this too is self-explanatory
