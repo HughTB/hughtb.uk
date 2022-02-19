@@ -4,9 +4,9 @@
             "name" : "hughtb.uk",
             "desc" : "Meta, I know\nFairly obvious what this is, not sure I really need to explain myself",
             "link" : "n/a",
-            "lastUpdated" : "18/02/2022",
+            "lastUpdated" : "19/02/2022",
             "images" : [
-                "https://hughtb.uk/images/tuberculosis-dev.png"
+                "https://hughtb.uk/images/hughtb-uk.png"
             ],
             "repo" : "n/a"
         },
@@ -21,12 +21,12 @@
             "repo" : "https://github.com/HughTB/simplicitas"
         },
         {
-            "name" : "minima",
-            "desc" : "A URL shortening API written in C# with ASP.NET\nNo, the irony of shortening URLs by making them longer is not lost on me.\nThis is moreso for the purpose of practicing programming APIs anyway\nYou can use it by sending a POST with the URL you want to shorten to https://minima.hughtb.uk/{url}\nIf you really like, you can use https://minima.hughtb.uk/MUYzQkU1Rjc0 to view the repo",
-            "link" : "https://minima.hughtb.uk/",
-            "lastUpdated" : "15/02/2022",
+            "name" : "minima (rewritten)",
+            "desc" : "A URL shortening API (re)written in C# with ASP.NET Core\nhttps://minima.hughtb.uk/u8TEqeCa\nUse the link, I dare you",
+            "link" : "http://minima.hughtb.uk/",
+            "lastUpdated" : "19/02/2022",
             "images" : [
-                "https://hughtb.uk/images/placeholder.png"
+                "https://hughtb.uk/images/minima.png"
             ],
             "repo" : "https://github.com/HughTB/minima"
         }
