@@ -1,0 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+header {
+    display: flex;
+    align-items: center;
+    margin: 1em;
+    border-radius: 1em;
+    background: #8635E3;
+    background: linear-gradient(90deg, #8635E3 max(15vw, 15vh), #2B86C5 100%);
+}
+
+header #head-text {
+    margin-left: 0.25em;
+    font-family: 'Roboto', sans-serif;
+    font-size: max(3vw, 2em);
+    font-weight: normal;
+}
+
+header #logo {
+    width: max(12vw, 12vh);
+    height: max(12vw, 12vh);
+    margin: 1em;
+}
