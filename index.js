@@ -30,13 +30,22 @@ async function populateProjects() {
     
     marked.use({ renderer });
 
-    const projects = (await getJson("/projects/projects.json")).projects;
+    var projects = (await getJson("/projects/projects.json")).projects;
 
     if (projects.length > 0) {
+        projects.sort((a, b) => {
+            if (a.updated > b.updated)
+                return -1;
+            if (b.updated > a.updated)
+                return 1;
+            return 0;
+        })
+
         for (var i = 0; i < projects.length; i++) {
             const htmlContent = document.createElement("section");
             htmlContent.className = "content-box";
-            htmlContent.innerHTML = marked.parse(await getFile(projects[i].md));
+            htmlContent.innerHTML = marked.parse(await getFile(`projects/${projects[i].md}`));
+            htmlContent.innerHTML += `<p>Last updated: ${projects[i].updated}</p>`;
             document.getElementById("projects").appendChild(htmlContent);
         }
     }

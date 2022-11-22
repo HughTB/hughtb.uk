@@ -13,6 +13,7 @@ body {
     border-radius: 1em;
     font-family: 'Roboto', sans-serif;
     color: #FFFFFF;
+    padding: 0.1em 0em;
 }
 
 .content-box h1 {

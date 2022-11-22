@@ -17,7 +17,6 @@ header #head-text {
 }
 
 header #logo {
-    width: max(12vw, 12vh);
-    height: max(12vw, 12vh);
+    width: max(10vw, 10vh);
     margin: 1em;
 }
