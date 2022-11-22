@@ -45,14 +45,17 @@ body {
     margin-bottom: 1em;
 }
 
-.center-me {
-    width: 100%;
-    justify-content: center;
+.centre-landscape {
+    text-align: center;
 }
 
 @media (orientation: portrait) {
     body {
         width: 100%;
         margin: 0% 0%;
+    }
+
+    .centre-landscape {
+        text-align: left;
     }
 }
