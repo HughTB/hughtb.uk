@@ -38,6 +38,11 @@ p {
     font-size: max(16px, var(--base-font-size));
 }
 
+.superscript {
+    font-size: 0.5em;
+    vertical-align: super;
+}
+
 a {
     color: #FFFFFF;
     text-decoration: underline;
