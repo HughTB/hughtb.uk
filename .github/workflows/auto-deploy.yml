@@ -1,0 +1,18 @@
+# Automatically update the live version of my website
+name: auto_deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - new
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          path: 'new'
