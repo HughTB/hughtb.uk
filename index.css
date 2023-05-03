@@ -46,7 +46,7 @@ p {
 a {
     color: #FFFFFF;
     text-decoration: underline;
-    text-decoration-thickness: 2px;
+    text-decoration-thickness: 0.075em;
     text-decoration-color: var(--accent-colour);
 }
 
