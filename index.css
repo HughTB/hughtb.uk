@@ -1,0 +1,66 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400;600&display=swap');
+
+body {
+    --accent-colour: #8635E3;
+
+    background-color: #121212;
+    color: #FFFFFF;
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+
+#grid-container {
+    display: grid;
+}
+
+#grid-container section {
+    padding: 1em;
+}
+
+h1 {
+    margin: 0;
+    padding: 0;
+    /* font-size: calc(24px + 1vw); */
+    /* font-size: 2vw; */
+    font-size: max(32px, calc(var(--base-font-size) * 1.6));
+}
+
+h2 {
+    margin: 0;
+    padding: 0;
+    /* font-size: calc(16px + 0.7vw); */
+    font-size: max(24px, calc(var(--base-font-size) * 1.25));
+}
+
+p {
+    margin: 0.5em 0em;
+    padding: 0;
+    /* font-size: calc(10px + 0.7vw); */
+    font-size: max(16px, var(--base-font-size));
+}
+
+a {
+    color: #FFFFFF;
+    text-decoration: underline;
+    text-decoration-thickness: 2px;
+    text-decoration-color: var(--accent-colour);
+}
+
+@media (orientation: landscape) {
+    body {
+        --base-font-size: 1.3vw;
+    }
+
+    #grid-container {
+        grid-template-columns: 1fr 1fr;
+    }
+}
+
+@media (orientation: portrait) {
+    body {
+        --base-font-size: 5vw;
+    }
+
+    #grid-container {
+        grid-template-columns: 1fr;
+    }
+}
