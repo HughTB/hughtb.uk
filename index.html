@@ -23,13 +23,22 @@
     <div>
         <h2><a href="https://github.com/HughTB/picoled">PicOLED</a></h2>
         <p>
-            PicOLED is a small USB/serial display which can be connected to a computer to show important information, such as CPU or memory usage (More to come in the future!). It is written entirely in C++ and <i>should</i> run on any RP2040-based microcontroller with an I<span class="superscript">2</span>C interface.
+            PicOLED is a small USB serial display which can be connected to a computer to show important information, such as CPU or memory usage (More to come in the future!). It is written entirely in C++ and <i>should</i> run on any RP2040-based microcontroller with an I<span class="superscript">2</span>C interface.
         </p>
         <p>
-            Currently, the PicOLED device itself is fully functional, and just waiting for a complete <a href="https://github.com/HughTB/picoled-driver">driver</a> to be developed. I am currently in the process of creating the Linux version of said driver, and so far it supports sending memory and CPU usage on all systems, and partial temperature information on specific systems (8th Gen Intel systems). Whether a Windows driver will be created remains to be seen (I'm scared of <code>windows.h</code>)
+            Currently, the device itself is fully functional, but waiting for a complete driver to be written. 
+            I am in the process of writing the <a href="https://github.com/HughTB/picoled-driver">Linux version</a> of this driver, which has at the time of writing, support for CPU and Memory usage, CPU temperature (On certain platforms, namely Intel 8th Gen and AMD Zen 2 CPUs) and GPU temperature (On RDNA 2 AMD GPUs).
+            A Windows driver may come into existence in the future, but this is a low priority to me as I do not anticipate anyone using this project other than myself, who uses Linux for my main desktop computer.
         </p>
         <p>
-            You can view the source code on <a href="https://github.com/HughTB/picoled">GitHub</a> (Last updated 2023-08-03)
+            You can view the source code on <a href="https://github.com/HughTB/picoled">GitHub</a> (Last updated 2023-09-07)
+        </p>
+    </div>
+    <div>
+        <h2>TB-69</h2>
+        <p>
+            TB-69 is a 69% (nice) ISO hand-wired keyboard of my own design. The chassis was desgined using Fusion 360 and 3D printed.
+            I am currently in the process of wiring the keyboard, which is proving to be more difficult than I was expecting due to the small size of connections and the inadequacy of my cheapo uncontrolled soldering iron
         </p>
     </div>
     <div>
