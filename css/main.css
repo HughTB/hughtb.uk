@@ -1,0 +1,102 @@
+/* The ungodly @import from google fonts */
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+html {
+  --background-color: #121212;
+  --accent-color: #8635E3;
+  --text-color: #FFFFFF;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--background-color);
+  color: var(--text-color);
+
+  font-family: 'IBM Plex Sans', sans-serif;
+  text-decoration-thickness: 0.075em;
+  text-decoration-color: var(--accent-colour);
+}
+
+.centre-children {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dont-fill {
+  max-width: 80%;
+  max-height: 80%;
+}
+
+.socials {
+  display: grid;
+  grid-template-columns: auto auto auto;
+  font-size: 1.25em;
+}
+
+.socials a {
+  text-align: center;
+}
+
+.socials a i {
+  padding-right: 0.25em;
+}
+
+.content {
+  color: var(--text-color);
+  padding: 1em;
+
+  text-align: justify;
+  text-justify: inter-word;
+}
+
+.top-card {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  display: grid;
+}
+
+.c-left {
+  background-color: var(--accent-color);
+  text-decoration-color: var(--text-color);
+}
+
+.c-right {
+  background-color: var(--background-color);
+}
+
+h1 {
+  margin: 0;
+  padding: 0;
+  font-size: 4em;
+}
+
+h2 {
+  margin: 0;
+  padding: 0;
+  font-size: 2em;
+}
+
+p {
+  font-size: 1.5em;
+}
+
+a {
+  color: #FFFFFF;
+  text-decoration: underline;
+}
+
+@media (orientation: landscape) {
+  .top-card {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (orientation: portrait) {
+  .top-card {
+    grid-template-rows: 1fr 1fr;
+  }
+}
