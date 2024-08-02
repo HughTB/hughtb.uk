@@ -1,0 +1,18 @@
+# Automatically update the live version of my website
+name: Auto Deploy
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - aug
+
+jobs:
+  deploy:
+    runs-on: self-hosted
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+        with:
+          path: 'aug'
+          submodules: 'true'
