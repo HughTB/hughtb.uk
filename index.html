@@ -18,9 +18,10 @@
     <section class="top-pane center">
       <div class="max-65">
         <h1>Hey there!</h1>
-        <p>I'm Hugh, a second year Computer Science undergrad and  at the University of Portsmouth
-        <p>I love working on hardware and software, tinkering with my homelab, and messing about with Linux on my
-           (slightly janky) setup. Most of my work is open-source on <a href="https://github.com/HughTB/">Github</a>
+        
+        <p>I'm Hugh, a second year Computer Science undergrad at the University of Portsmouth (Also currently on a placement @UoP!)
+
+        <p>I love working with hardware, developing software, tinkering with my homelab and messing about with Linux on my personal machine. Most of my work (that's not under grading or licence restrictions) is open-source on <a href="https://github.com/HughTB/">Github</a>
 
         <div class="socials">
           <a href="https://github.com/HughTB/"><i class="fa-brands fa-github" aria-hidden="true"></i>/HughTB</a>
@@ -35,41 +36,37 @@
       <div class="project featured">
         <h1><a href="https://train-tracked.com/">Train Tracked</a></h1>
 
-        <p>Created as a Level 5 project @UoP, A Better&trade; UK train tracking app which uses National Rail Enquries'
-           <a href="https://www.nationalrail.co.uk/developers/darwin-data-feeds/">Darwin&trade; API</a>. Built with
-           Flutter on the frontend, Dart & Shelf on the backend.
+        <p>Created as a Level 5 project @UoP, A Better&trade; UK train tracking app which uses National Rail Enquiries' <a href="https://www.nationalrail.co.uk/developers/darwin-data-feeds/">Darwin&trade; API</a>. Built with Flutter on the frontend, Dart & Shelf on the backend.
 
-        <p>The backend acts as a proxy between the mobile app and Darwin. This is mostly to convert from the legacy
-           SOAP API that is Darwin and a more up-to-date and reliable REST API. It also improves the reliability of
-           requests as SOAP relies heavily on keeping a connection open for the duration of the request, including
-           while processing in the background, which is not always feasable on the type of connection people may be
-           using on a train (i.e. cellular data). There is also more filtering done before passing the request to
-           Darwin, as it has no inate validation (doesn't check dates, times or that a train RID or station CRS exists,
-           simply returning a 500...) so that less time is wasted waiting for it to respond with a useless error.
+        <p>The backend acts as a proxy between the mobile app and Darwin. It's main purpose to convert from the legacy SOAP API that is Darwin to a more up-to-date and reliable REST API. It also improves the reliability of requests as SOAP relies heavily on keeping a connection open for the duration of the request, including while it processes the request and fetches data from other sources, which is not always feasible on the type of connection people may be using on a train (i.e. very poor cellular data in the middle of the countryside). There is also more filtering done before passing the request to Darwin, as it has no innate validation -- it doesn't check dates, times, station CRS codes or train RIDs -- and simply returns a 500 if any data is not accepted.
       </div>
 
       <div class="project">
         <h1>Homelab</h1>
         
-        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin cursus euismod rutrum. Sed semper molestie purus. Ut gravida porta ligula vitae lobortis. Nulla ut tincidunt lacus. Phasellus posuere consectetur lorem, in tristique est congue at. Donec dictum bibendum congue. Vivamus odio est, efficitur dictum ante vitae, posuere scelerisque felis. Mauris luctus felis a vehicula tincidunt. Vivamus mollis dolor a metus mollis viverra. Curabitur sit amet ante et sapien consequat mattis tempus et enim. Nullam nec eros nisi. Mauris ullamcorper nulla quis tortor eleifend rhoncus. Nulla ullamcorper, dolor sit amet placerat varius, nisi neque pharetra libero, sollicitudin ultrices lacus nisi ac enim. Cras aliquet condimentum turpis, ac volutpat massa bibendum eu. 
+        <p>My personal homelab, which you're currently using to view this website!
+
+        <p>Currently made up of 2 Lenovo ThinkCenter 'Tiny' PCs (1x M700 & 1x M720q) running Proxmox. They currently run a few publicly accessible services (this website, and the backends for a few of my personal and University projects) as well as private services such as a VPN, media server and a couple of game servers.
       </div>
 
       <div class="project">
-        <h1>picOLED</h1>
+        <h1><a href="https://github.com/HughTB/picoled">picOLED</a></h1>
 
-        <p>Nullam vulputate ultrices ante, vel volutpat libero sollicitudin in. Praesent odio mi, faucibus eu maximus eget, viverra vitae ante. Integer ut quam consequat, congue odio quis, feugiat dolor. Cras tristique aliquet purus, ac vestibulum quam. Phasellus accumsan quam sit amet velit bibendum, consequat ultrices tellus luctus. Fusce auctor, nisl sit amet venenatis pellentesque, dolor nisi iaculis libero, at vulputate tortor nulla quis mauris. Nunc sagittis nisi sit amet interdum vestibulum. Ut in dignissim libero. Donec sed ultrices sem. Duis iaculis dolor ipsum. Vestibulum quis risus pharetra, consectetur enim ornare, consequat ligula. Aliquam id feugiat mauris. Phasellus condimentum risus eu risus ornare laoreet. 
+        <p>A small (<1") OLED display and RP2040-based microcontroller which can be connected to a computer to display important stats.
+
+        <p>Both the device's firmware and the Linux driver are written in C++, using CMake to manage dependencies. The statistics are gathered by the driver and then sent over a serial connection to the device, which interprets and displays the data. While work on this project has temporarily paused (if I have more time in the future) it is definitely a project I want to finish and get to the point of being what I would consider to be "fully functional", as far as what my original plans were (And possibly expand upon them using a WiFi enabled microcontroller...)
       </div>
 
       <div class="project">
-        <h1>Minima</h1>
+        <h1><a href="https://github.com/HughTB/minima-dart">Minima</a></h1>
 
-        <p>Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Duis pellentesque fermentum pretium. Sed rhoncus, erat eu porttitor mattis, libero dui bibendum velit, suscipit hendrerit nulla ligula ac magna. Nullam et dapibus diam, maximus lobortis elit. Nullam non nulla faucibus, tempus quam et, facilisis massa. Nulla id semper velit. Fusce scelerisque magna et finibus laoreet. Vestibulum elit leo, vehicula vel arcu sit amet, tempor gravida mauris. Aliquam erat volutpat. Nulla arcu nunc, pharetra eu orci aliquet, blandit aliquam arcu. Maecenas eget purus vel quam eleifend lacinia et vitae est. 
+        <p>A URL "shortening" API.
+
+        <p>Minima was created for the simple purpose of learning to use Shelf in Dart -- somewhat like a "Hello World" project in any new language. It is a fairly basic API, simply checking if the provided link already exists in the database, and randomly generating a new 6 letter code if not. The "database" consists of a CSV file, meaning that link data is stored as plain text, but must be URL-encoded before storing to make sure the link doesn't break the file encoding.
       </div>
 
-      <div class="project">
-        <h1>TB-69</h1>
-
-        <p>Phasellus nec dolor turpis. Donec pretium, urna et cursus pulvinar, turpis orci sagittis augue, sed eleifend lorem nunc id felis. Curabitur sollicitudin malesuada orci a dignissim. Aliquam ut gravida ipsum. Aliquam suscipit sed turpis in viverra. Ut lacinia, ipsum sollicitudin tincidunt dapibus, turpis risus pulvinar neque, nec facilisis erat nibh fringilla lacus. Nullam auctor nisi eget accumsan luctus. Mauris risus turpis, pharetra non massa vitae, tempor aliquam nibh. Nunc in sodales erat. Etiam sollicitudin est sit amet purus condimentum elementum. Aliquam scelerisque bibendum lectus nec consequat. 
+      <div class="last">
+        <p>That's all for now, check back later and there might be more here!</p>
       </div>
     </section>
   </div>

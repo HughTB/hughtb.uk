@@ -111,7 +111,17 @@ footer p {
 }
 
 .project h1 a {
-  text-decoration: none;
+  text-decoration: underline;
+  text-decoration-color: var(--foreground);
+  text-decoration-thickness: 0.025em;
+}
+
+.last {
+  border-top: 0.15rem solid var(--accent);
+}
+
+.last p {
+  font-size: 1.3rem;
 }
 
 h1 {
