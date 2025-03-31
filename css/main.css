@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+:root {
+  --bg-light: #FFFFFF;
+  --bg-dark: #121212;
+  --fg-light: #000000;
+  --fg-dark: #FFFFFF;
+
+  --container-width: calc(100% - 1rem);
+}
+
+@media (prefers-color-scheme: light) {
+  html {
+    --fg: var(--fg-light);
+    --bg: var(--bg-light);
+  }
+}
+
+@media (prefers-color-scheme: dark) {
+  html {
+    --fg: var(--fg-dark);
+    --bg: var(--bg-dark);
+  }
+}
+
+body {
+  padding: 0;
+  margin: 0;
+
+  background-color: var(--bg);
+  color: var(--fg);
+
+  font-family: 'IBM Plex Sans', sans-serif;
+}
+
+footer {
+  margin: 0;
+  height: 2.5rem;
+  background-color: var(--accent);
+  color: var(--on-accent);
+}
+
+a {
+  color: inherit;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 0.1em;
+}
+
+main {
+  padding: 0;
+  margin: 0;
+  min-height: calc(100vh - 2.5rem);
+}
+
+main :first-child {
+  margin-top: 0;
+}
+
+article h1 {
+  border-bottom: 0.15rem solid var(--accent);
+}
+
+article h1 a {
+  text-decoration: none;
+}
+
+article p {
+  text-align: justify;
+}
+
+code {
+  font-family: 'IBM Plex Mono', monospace;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.banner {
+  background-color: var(--accent);
+  color: var(--on-accent);
+  padding: 3rem 0;
+}
+
+.banner h1 {
+  font-size: 4rem;
+}
+
+.banner p {
+  font-size: 1.3rem;
+}
+
+.banner a, footer a {
+  text-decoration-color: var(--on-accent);
+}
+
+.socials {
+  display: grid;
+  gap: 0.5rem;
+  grid-template-columns: repeat(2, 1fr);
+  text-align: center;
+}
+
+.socials a {
+  font-size: 1rem;
+}
+
+.socials a i {
+  margin-right: 0.35rem;
+}
+
+.container {
+  width: var(--container-width);
+  margin: 1rem auto;
+}
+
+@media (max-width: 575px) {
+  .container {
+    margin: 1rem 0.5rem;
+  }
+}
+
+@media (min-width: 576px) {
+  :root {
+    --container-width: 510px;
+  }
+}
+
+@media (min-width: 768px) {
+  :root {
+    --container-width: 700px;
+  }
+
+  .socials {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (min-width: 1024px) {
+  :root {
+    --container-width: 950px;
+  }
+
+  .socials a {
+    font-size: 1.3rem;
+  }
+}
+
+@media (min-width: 1280px) {
+  :root {
+    --container-width: 1200px;
+  }
+}

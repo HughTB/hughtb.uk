@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About - Hugh Baldwin</title>
+  <link rel="stylesheet" href="/css/main.css">
+
+  <style>
+    :root {
+      --accent: #702963;
+      --on-accent: #FFFFFF;
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <div class="banner">
+      <div class="container">
+        <h1>Hey there!</h1>
+        <p>I'm Hugh, a final-year Computer Science undergrad at the University of Portsmouth
+        <p>I love messing around with Linux, cosplaying as a sysadmin in my homelab, tinkering with weird hardware (old and new) and developing software.
+
+        <div class="socials">
+          <a href="http://github.com/HughTB"><i class="bi bi-github"></i>/HughTB</a>
+          <a href="http://linkedin.com/in/Hugh-T-Baldwin"><i class="bi bi-linkedin"></i>/Hugh-T-Baldwin</a>
+          <a href="https://discordapp.com/users/403609667722412054"><i class="bi bi-discord"></i>@HughTB</a>
+          <a href="mailto:contact@hughtb.uk"><i class="bi bi-envelope-fill"></i>contact@hughtb.uk</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="container">
+      <h1>The big projects</h1>
+
+      <article>
+        <h1>Homelab</h1>
+
+        <p>My personal homelab, both a learning and self-hosting environment and my biggest money-sink
+        <p>Having undergone many iterations, it's currently made up of 5 'servers': one generic Ryzen mini pc, 'balimund'; one HP EliteDesk 600 G3 SFF (nice name HP), 'dezziri'; and three Dell OptiPlex 3060 Micros (slightly better name, but still not great), 'zayouduf', 'yeqdah' and 'xokomar'; all of which run Proxmox VE. Balimund currently acts as my main docker host, router and the testing environment for my dissertation. Dezziri is positively crammed full of hardware, having two 12TB HDDs passed through to a TrueNAS VM, a 10GbE NIC, as well as an Intel ARC A310 for speedy video encoding and transcoding in Jellyfin. The three OptiPlex's are set up as a Proxmox cluster to act as a learning environment for both Proxmox clustering, as well as other clustering solutions (currently running a 3-node K3s cluster as VMs).
+        <p>As if I hadn't spent enough on compute hardware, I've also invested into a Unifi network setup, currently made up of three Flex-line switches and a U6+ access point with the network controller running in a VM. Is it massively overkill for a single user in a tiny flat? Yes. I will take no further questions.
+      </article>
+
+      <article>
+        <h1><a href="http://hivesignage.com">HiveSignage</a></h1>
+
+        <p>A digital signage system created as my bachelor's dissertation project.
+        <p>More info to come soon!
+      </article>
+
+      <article>
+        <h1><a href="http://train-tracked.com">Train Tracked</a></h1>
+
+        <p>A better&trade; train tracking app, created for a level 5 project @UoP
+        <p>Built using Flutter on the frontend, and Dart with Shelf on the backend, it uses National Rail Enquires' <a href="http://www.nationalrail.co.uk/developers/darwin-data-feeds/">Darwin&trade;</a> API for realtime data. The backend acts effectively as a proxy between the mobile app and Darwin, both converting from the SOAP API that is Darwin to a more modern REST API, and improving the reliability of calls by adding error handling and holding open TCP connections when mobile devices may not be able to.
+        <p>Yes, that's right; the UK's flagship train tracking API has almost no error handling what-so-ever and will constantly spit out <code>500</code>s for seemingly no reason
+      </article>
+    </div>
+  </main>
+
+  <footer class="center">
+    <p>&copy; <a href="http://hughtb.uk">Hugh Baldwin</a>, 2025
+  </footer>
+</body>
+</html>
